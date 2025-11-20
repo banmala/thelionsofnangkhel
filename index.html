@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Emergency Contacts</title>
+  <title>The Lions of Nangkhel</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="./css/style.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
@@ -17,67 +17,172 @@
   <nav id="mainNavbar" class="fixed top-0 w-full z-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-16">
-        <a href="#" class="text-3xl font-bold flex items-center text-gray-900">
-          <i class="fas fa-medkit mr-2"></i>Emergency Contacts
+        <a href="#" class="text-3xl font-bold flex gap-4 items-center ">
+          <img src="./images/logo.png" alt="TLON" class="w-12 overflow-hidden">
+          The Lions of Nangkhel
         </a>
         
         <!-- Mobile menu button -->
         <div class="md:hidden">
-          <button id="menu-btn" class="text-gray-800 focus:outline-none">
+          <button id="nav-toggler" class=" focus:outline-none">
             <i class="fas fa-bars text-2xl"></i>
           </button>
         </div>
         <div class="hidden md:flex space-x-6 md:order-1">
-          <a href="#hands-on" class="font-medium text-gray-800 hover:text-blue-600">Hands on</a>
-          <a href="#categories" class="font-medium text-gray-800 hover:text-blue-600">Categories</a>
-          <a href="#contact" class="font-medium text-gray-800 hover:text-blue-600">Add New</a>
+          <a href="#projects" class="font-medium  hover:text-blue-600">Projects</a>
+          <a href="#team" class="font-medium  hover:text-blue-600">Our Team</a>
+          <a href="#join-us" class="font-medium  hover:text-blue-600">Join Us</a>
         </div>
       </div>
     </div>
   </nav>
 
   <!-- Mobile menu -->
-  <div id="mobile-menu" class="hidden md:hidden bg-white w-full">
-    <a href="#hands-on" class="block px-4 py-2">Hands on</a>
-    <a href="#categories" class="block px-4 py-2">Categories</a>
-    <a href="#contact" class="block px-4 py-2">Add New</a>
+  <div id="mobile-menu" class="opacity-0 md:opacity-0 bg-white w-full fixed inset-0 flex flex-col gap-[20px] items-center justify-center transition-opacity duration-500">
+    <a href="#projects" class="block px-4 py-2 text-5xl">Projects</a>
+    <a href="#team" class="block px-4 py-2 text-5xl">Our Team</a>
+    <a href="#join-us" class="block px-4 py-2 text-5xl">Join Us</a>
   </div>
 
   <!-- Hero Section -->
-  <section class="hero h-screen flex flex-col justify-center items-center text-center">
-    <h1 class="text-5xl md:text-6xl font-bold mb-4">Let's Save Beautiful Souls</h1>
-    <p class="text-xl md:text-2xl mb-6 text-gray-700">Our Small Step Can Save Precious Lives</p>
-    <a href="#hands-on" class="bg-blue-600 text-white px-6 py-3 rounded-lg flex items-center gap-2 hover:bg-blue-700 transition">
-      <i class="fas fa-images"></i> View Contacts
-    </a>
-  </section>
-
-  <!-- Hands On Section -->
-  <section id="hands-on" class="py-20 bg-gray-200">
-    <div class="max-w-7xl mx-auto px-4 text-center">
-      <h2 class="text-4xl font-bold mb-3">Hands On Contacts</h2>
-      <p class="text-gray-600 text-lg">Discover some of most important emergency contacts</p>
+  <section class="hero h-screen">
+    <div class="bg-[#00000099] h-screen flex flex-col justify-center items-center text-center max-sm:px-[30px]">
+      <h1 class="text-5xl text-white md:text-6xl font-bold mb-4">Together We Can, Together We Will!!</h1>
+      <p class="text-xl md:text-2xl mb-6 text-gray-300">Connecting the ancient past to the new generation.</p>
+      <a href="#projects" class="bg-blue-600 text-white px-6 py-3 rounded-lg flex items-center gap-2 hover:bg-blue-700 transition">
+        <i class="fas fa-images"></i> Explore Our Projects
+      </a>
     </div>
   </section>
 
-  <!-- Categories Section -->
-  <section id="categories" class="py-20 bg-white">
+  <!-- Hands On Section -->
+  <section id="projects" class="py-20 bg-gray-200">
     <div class="max-w-7xl mx-auto px-4 text-center">
-      <h2 class="text-4xl font-bold mb-3">Categories</h2>
-      <p class="text-gray-600 text-lg">Explore our diverse collection of contacts</p>
+      <h2 class="text-4xl font-bold mb-3">Our Projects</h2>
+      <p class="text-gray-600 text-lg">Discover some of our projects</p>
+    </div>
+  </section>
+
+  <!-- team Section -->
+  <section id="team" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <h2 class="text-4xl font-bold mb-3">Our Team</h2>
+      <p class="text-gray-600 text-lg">Here is our team</p>
+    </div>
+    <div class="w-full text-center mt-10">
+      <div class="max-w-7xl mx-auto overflow-hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 content-stretch gap-[40px] w-full">
+        <div class="flex flex-col gap-[5px] items-center">
+            <div class="size-[300px] rounded-full bg-gray-200 overflow-hidden group">
+            <img src="./images/teams/byanju.jpg" alt="Team" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+            </div>
+            <p class="text-[20px]">Manish Byanju</p>
+            <p class="text-[15px] text-red-900">Chairman</p>
+        </div>
+        <div class="flex flex-col gap-[5px] items-center">
+            <div class="size-[300px] rounded-full bg-gray-200 overflow-hidden group">
+            <img src="./images/teams/sunil.jpg" alt="Team" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+            </div>
+            <p class="text-[20px]">Sunil Banmala</p>
+            <p class="text-[15px] text-red-900">Vice Chairman</p>
+        </div>
+        <div class="flex flex-col gap-[5px] items-center">
+            <div class="size-[300px] rounded-full bg-gray-200 overflow-hidden group">
+            <img src="./images/teams/bishal.png" alt="Team" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+            </div>
+            <p class="text-[20px]">Bishal Sukubhatu</p>
+            <p class="text-[15px] text-red-900">Secretary</p>
+        </div>
+        <div class="flex flex-col gap-[5px] items-center">
+            <div class="size-[300px] rounded-full bg-gray-200 overflow-hidden group">
+            <img src="./images/teams/shristi.png" alt="Team" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+            </div>
+            <p class="text-[20px]">Shristi Kasula</p>
+            <p class="text-[15px] text-red-900">Assistant Secretary</p>
+        </div>
+        <div class="flex flex-col gap-[5px] items-center">
+            <div class="size-[300px] rounded-full bg-gray-200 overflow-hidden group">
+            <img src="./images/teams/manish.png" alt="Team" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+            </div>
+            <p class="text-[20px]">Manish Sukubhatu</p>
+            <p class="text-[15px] text-red-900">Accountant</p>
+        </div>
+        <div class="flex flex-col gap-[5px] items-center">
+            <div class="size-[300px] rounded-full bg-gray-200 overflow-hidden group">
+            <img src="./images/teams/bikash.jpg" alt="Team" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+            </div>
+            <p class="text-[20px]">Bikash Byanju</p>
+            <p class="text-[15px] text-red-900">Member</p>
+        </div>
+        <div class="flex flex-col gap-[5px] items-center">
+            <div class="size-[300px] rounded-full bg-gray-200 overflow-hidden group">
+            <img src="./images/teams/sushan.png" alt="Team" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+            </div>
+            <p class="text-[20px]">Sushan Byanju</p>
+            <p class="text-[15px] text-red-900">Member</p>
+        </div>
+        <div class="flex flex-col gap-[5px] items-center">
+            <div class="size-[300px] rounded-full bg-gray-200 overflow-hidden group">
+            <img src="./images/teams/ujjwol.png" alt="Team" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+            </div>
+            <p class="text-[20px]">Ujjwal Byanju</p>
+            <p class="text-[15px] text-red-900">Member</p>
+        </div>
+        <div class="flex flex-col gap-[5px] items-center">
+            <div class="size-[300px] rounded-full bg-gray-200 overflow-hidden group">
+            <img src="./images/teams/rojina.png" alt="Team" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+            </div>
+            <p class="text-[20px]">Rojina Byanju</p>
+            <p class="text-[15px] text-red-900">Member</p>
+        </div>
+        <div class="flex flex-col gap-[5px] items-center">
+            <div class="size-[300px] rounded-full bg-gray-200 overflow-hidden group">
+            <img src="./images/teams/shramit.png" alt="Team" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+            </div>
+            <p class="text-[20px]">Shramit Byanju</p>
+            <p class="text-[15px] text-red-900">Member</p>
+        </div>
+        <div class="flex flex-col gap-[5px] items-center">
+            <div class="size-[300px] rounded-full bg-gray-200 overflow-hidden group">
+            <img src="./images/teams/goldson.png" alt="Team" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+            </div>
+            <p class="text-[20px]">Goldson Sukubhatu</p>
+            <p class="text-[15px] text-red-900">Member</p>
+        </div>
+        <div class="flex flex-col gap-[5px] items-center">
+            <div class="size-[300px] rounded-full bg-gray-200 overflow-hidden group">
+            <img src="./images/teams/ambika.png" alt="Team" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+            </div>
+            <p class="text-[20px]">Ambika Suwal</p>
+            <p class="text-[15px] text-red-900">Member</p>
+        </div>
+        <div class="flex flex-col gap-[5px] items-center">
+            <div class="size-[300px] rounded-full bg-gray-200 overflow-hidden group">
+            <img src="./images/teams/ujwala.png" alt="Team" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+            </div>
+            <p class="text-[20px]">Ujjwala Byanju</p>
+            <p class="text-[15px] text-red-900">Member</p>
+        </div>
+        <div class="flex flex-col gap-[5px] items-center">
+            <div class="size-[300px] rounded-full bg-gray-200 overflow-hidden group">
+            <img src="./images/teams/kabina.png" alt="Team" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+            </div>
+            <p class="text-[20px]">Kabina Byanju</p>
+            <p class="text-[15px] text-red-900">Member</p>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="py-20 bg-gray-900 text-white">
+  <section id="join-us" class="py-20 bg-gray-900 text-white">
     <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12">
       <div class="space-y-6">
-        <h2 class="text-4xl font-bold">Let The Brave Souls be Saved</h2>
+        <h2 class="text-4xl font-bold">Let's Make ’Em Happen</h2>
         <p class="text-lg text-gray-300">Ready to bring some changes in society?</p>
         <div class="space-y-4">
           <div class="flex items-center gap-3">
             <i class="fas fa-envelope text-blue-500 text-xl"></i>
-            <span>cozythrives@gmail.com</span>
+            <span>thelionsofnangkhel@gmail.com</span>
           </div>
           <div class="flex items-center gap-3">
             <i class="fas fa-phone text-blue-500 text-xl"></i>
@@ -85,18 +190,18 @@
           </div>
           <div class="flex items-center gap-3">
             <i class="fas fa-map-marker-alt text-blue-500 text-xl"></i>
-            <span>Bhaktapur</span>
+            <span>Nangkhel, Suryabinayak-9, Bhaktapur</span>
           </div>
         </div>
       </div>
       <div>
         <form class="bg-white p-8 rounded-2xl space-y-4 text-gray-900" action="https://formspree.io/f/mnngajlk" method="POST">
-          <h4 class="text-2xl font-semibold mb-4">Add New Contacts</h4>
+          <h4 class="text-2xl font-semibold mb-4">Join Us</h4>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <input
-                name="contactName" 
+                name="name" 
                 type="text" 
-                placeholder="Contact Name" 
+                placeholder="Full Name" 
                 class="p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" 
                 required
             >
@@ -107,25 +212,18 @@
                 required
             >
             <input 
-                name="category"
+                name="interests"
                 type="text" 
-                placeholder="Category" 
+                placeholder="Interests" 
                 class="col-span-1 md:col-span-2 p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" 
                 required
             >
-            <textarea
-                name="description"
-                placeholder="Description of the Contact" 
+              <textarea
+                name="expectations"
+                placeholder="Expectations from the Club" 
                 rows="4" 
                 class="col-span-1 md:col-span-2 p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" 
                 required></textarea>
-            <input 
-                  name="referer"
-                  type="text" 
-                  placeholder="Referrer (Your Contact) | (Optional)" 
-                  class="col-span-1 md:col-span-2 p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" 
-                  required
-              >
           </div>
           <button 
             type="submit" 
@@ -141,7 +239,7 @@
   <!-- Footer -->
   <footer class="bg-gray-900 text-white py-8">
     <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
-      <p>&copy; 2024 Emergency Contact. All rights reserved.</p>
+      <p>&copy; 2025 The Lions of Nangkhel. All rights reserved.</p>
       <div class="flex gap-4">
         <a href="#" class="hover:text-blue-500"><i class="fab fa-instagram text-xl"></i></a>
         <a href="#" class="hover:text-blue-500"><i class="fab fa-facebook text-xl"></i></a>

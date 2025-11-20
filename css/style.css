@@ -17,20 +17,31 @@ body {
 nav {
     transition: all 0.3s ease;
     backdrop-filter: blur(10px);
+    color:rgb(226, 219, 207);
 }
 
 nav.scrolled {
+    transition: all 0.3s ease;
     background: rgba(255, 255, 255, 0.95) !important;
     box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+    color: black;
 }
 
 
 /* Hero Section */
 .hero {
     height: 100vh;
-    background: linear-gradient(135deg, #8491c9 0%, #ae7be0 100%);
+    /* background: linear-gradient(135deg, #dcffb6 0%, #ffdce1 100%); */
+    background: url('../images/banner.jpg') !important;
 }
 
+#team{
+    background: linear-gradient(135deg, #dcffb6 0%, #ffdce1 100%);
+}
+
+/* #mobile-menu{
+    transition: all 1s ease;
+} */
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -41,7 +52,7 @@ nav.scrolled {
 
 @media (max-width: 576px) {
     .hero {
-        padding: 0 15px;
+        /* padding: 0 15px; */
     }
     
     .hero h1 {

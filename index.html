@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emergency Contacts</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./css/style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-100 font-['Lexend']">
+
+  <!-- Navbar -->
+  <nav id="mainNavbar" class="fixed top-0 w-full z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="#" class="text-3xl font-bold flex items-center text-gray-900">
+          <i class="fas fa-medkit mr-2"></i>Emergency Contacts
+        </a>
+        
+        <!-- Mobile menu button -->
+        <div class="md:hidden">
+          <button id="menu-btn" class="text-gray-800 focus:outline-none">
+            <i class="fas fa-bars text-2xl"></i>
+          </button>
+        </div>
+        <div class="hidden md:flex space-x-6 md:order-1">
+          <a href="#hands-on" class="font-medium text-gray-800 hover:text-blue-600">Hands on</a>
+          <a href="#categories" class="font-medium text-gray-800 hover:text-blue-600">Categories</a>
+          <a href="#contact" class="font-medium text-gray-800 hover:text-blue-600">Add New</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div id="mobile-menu" class="hidden md:hidden bg-white w-full">
+    <a href="#hands-on" class="block px-4 py-2">Hands on</a>
+    <a href="#categories" class="block px-4 py-2">Categories</a>
+    <a href="#contact" class="block px-4 py-2">Add New</a>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero h-screen flex flex-col justify-center items-center text-center">
+    <h1 class="text-5xl md:text-6xl font-bold mb-4">Let's Save Beautiful Souls</h1>
+    <p class="text-xl md:text-2xl mb-6 text-gray-700">Our Small Step Can Save Precious Lives</p>
+    <a href="#hands-on" class="bg-blue-600 text-white px-6 py-3 rounded-lg flex items-center gap-2 hover:bg-blue-700 transition">
+      <i class="fas fa-images"></i> View Contacts
+    </a>
+  </section>
+
+  <!-- Hands On Section -->
+  <section id="hands-on" class="py-20 bg-gray-200">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <h2 class="text-4xl font-bold mb-3">Hands On Contacts</h2>
+      <p class="text-gray-600 text-lg">Discover some of most important emergency contacts</p>
+    </div>
+  </section>
+
+  <!-- Categories Section -->
+  <section id="categories" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <h2 class="text-4xl font-bold mb-3">Categories</h2>
+      <p class="text-gray-600 text-lg">Explore our diverse collection of contacts</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-gray-900 text-white">
+    <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12">
+      <div class="space-y-6">
+        <h2 class="text-4xl font-bold">Let The Brave Souls be Saved</h2>
+        <p class="text-lg text-gray-300">Ready to bring some changes in society?</p>
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <i class="fas fa-envelope text-blue-500 text-xl"></i>
+            <span>cozythrives@gmail.com</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <i class="fas fa-phone text-blue-500 text-xl"></i>
+            <span>+977-01-111111</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <i class="fas fa-map-marker-alt text-blue-500 text-xl"></i>
+            <span>Bhaktapur</span>
+          </div>
+        </div>
+      </div>
+      <div>
+        <form class="bg-white p-8 rounded-2xl space-y-4 text-gray-900" action="https://formspree.io/f/mnngajlk" method="POST">
+          <h4 class="text-2xl font-semibold mb-4">Add New Contacts</h4>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <input
+                name="contactName" 
+                type="text" 
+                placeholder="Contact Name" 
+                class="p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" 
+                required
+            >
+            <input 
+                type="contactNumber" 
+                placeholder="Contact Number" 
+                class="p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" 
+                required
+            >
+            <input 
+                name="category"
+                type="text" 
+                placeholder="Category" 
+                class="col-span-1 md:col-span-2 p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" 
+                required
+            >
+            <textarea
+                name="description"
+                placeholder="Description of the Contact" 
+                rows="4" 
+                class="col-span-1 md:col-span-2 p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" 
+                required></textarea>
+            <input 
+                  name="referer"
+                  type="text" 
+                  placeholder="Referrer (Your Contact) | (Optional)" 
+                  class="col-span-1 md:col-span-2 p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" 
+                  required
+              >
+          </div>
+          <button 
+            type="submit" 
+            class="w-full bg-blue-600 text-white py-3 rounded-lg flex justify-center items-center gap-2 hover:bg-blue-700 transition"
+          >
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-8">
+    <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
+      <p>&copy; 2024 Emergency Contact. All rights reserved.</p>
+      <div class="flex gap-4">
+        <a href="#" class="hover:text-blue-500"><i class="fab fa-instagram text-xl"></i></a>
+        <a href="#" class="hover:text-blue-500"><i class="fab fa-facebook text-xl"></i></a>
+        <a href="#" class="hover:text-blue-500"><i class="fab fa-twitter text-xl"></i></a>
+        <a href="#" class="hover:text-blue-500"><i class="fab fa-youtube text-xl"></i></a>
+      </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+  </footer>
